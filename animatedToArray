@@ -1,0 +1,69 @@
+#Given the left and top coordinates of the animated portions of the map, returns what the animated object is. 
+import requests
+from bs4 import BeautifulSoup
+
+def get_html_content(url, save_path='AWBW-Map-Reader\html_content.txt'):
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        html_content = response.text
+        with open(save_path, 'w', encoding='utf-8') as file:
+            file.write(html_content)
+        print(f"HTML content saved to {save_path}")
+        return save_path
+    else:
+        print(f"Failed to retrieve the page. Status code: {response.status_code}")
+        return None
+
+def arrayIndexToCoordinateLeft(left): #The coordinates for left and top of the website source do not match, here's the conversion function
+    return left * 16 + 1
+
+def arrayIndexToCoordinateTop(top):
+
+    return (top) * 16
+
+def print_src_with_style(leftNum, topNum):
+    # Values to check for topNum
+    top_values_to_check = [topNum, topNum - 1, topNum - 5, topNum - 8]
+
+
+
+    for current_top in top_values_to_check:
+        with open('AWBW-Map-Reader\html_content.txt', 'r', encoding='utf-8') as file:
+            relevant_lines = file.readlines()[250:400]
+            html_content = "\n".join(relevant_lines)
+            
+            # Use BeautifulSoup to parse the relevant HTML content
+            soup = BeautifulSoup(html_content, 'html.parser')
+
+            # Construct the style string based on leftNum and current_top
+            style_string = f'left:{leftNum}; top:{current_top}; position:absolute; border: 0px; z-index:100;'
+
+            # Find the span element with the specified style
+            span_element = soup.find('span', style=style_string)
+
+            if span_element:
+                # Extract the src attribute from the img tag within the span element
+                img_src = span_element.find('img')['src']
+
+                # Check for multiple keywords and print the matching one
+                keywords = ['city', 'comtower', 'base', 'airport', 'pipe', 'port', 'silo', 'hq', 'infantry']
+                matched_keyword = next((keyword for keyword in keywords if keyword in img_src), None)
+
+                if matched_keyword:
+                    print(matched_keyword)
+                else:
+                    print(f"No matching keyword found for style 'left:{leftNum}; top:{current_top}'.")
+                return  # Exit the function if the element is found
+
+    print(f"Failed to find the element after checking all values.")
+
+# Example usage with a URL
+website_url = 'https://awbw.amarriner.com/prevmaps.php?maps_id=151870'
+
+left = arrayIndexToCoordinateLeft(26)
+top = arrayIndexToCoordinateTop(6)
+
+#get_html_content(website_url)
+print_src_with_style(left, top)
+

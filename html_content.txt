@@ -1,0 +1,640 @@
+<html>
+<head>
+<title>Preview Map - AWBW  
+</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.75">
+<link rel="stylesheet" href="css/awbw_minify.css?1700007702" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/header.css?1700007702">
+<link rel="stylesheet" type="text/css" href="css/main.css?1700007702">
+<link rel="stylesheet" type="text/css" href="css/slideshow.css?1700007702">
+<link rel="stylesheet" type="text/css" href="css/game.css?1700007702">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+      <link rel="stylesheet" href="css/calculator_new.css?1700007702">
+      <link rel="stylesheet" href="css/messages.css?1700007702">
+      <link rel="stylesheet" href="css/layout.css?1700007702">
+<link rel="shortcut icon" href="https://awbw.amarriner.com/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://awbw.amarriner.com/favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+   function move_check(query, url) {
+      var reply = confirm(query);
+      if (reply) {
+         this.location.href = url;
+      }
+   }
+
+</script>
+</head>
+<body>
+<!-- Begin Page (1700416328) (12:52:8) -->
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:900;"></div>
+<script type="text/javascript" language="JavaScript" src="js/overlib_mini_minify.js?v=1.0"></script>
+
+<div id="fixed-header-wrapper">
+    <nav id="top-header-nav">
+        <div id="above-nav"></div>
+        <div id="logo-background2">
+            <a href="/" style="display: block;">
+                <img id="logo" height=70 width=170 src="terrain/awbwlogo4.gif">
+            </a>
+        </div>
+        
+        <ul id="nav-options" style="margin: auto;">
+
+        
+            <!-- <span style="position: absolute; top: -36px; left: 5px; color: red">Announcement text here.</span> -->
+
+        
+         
+            <li id="login-button" style="padding-left: 15px; padding-right: 15px;">
+                <label id="login-box-button" for="login-box-toggle">Login</label>
+                <input id="login-box-toggle" type="checkbox">
+
+                <!-- JS Code for login stuff is in footer.php -->
+                <div id="login-box">
+                    <div id="login-tab">
+                        <span id="login-err"></span>
+                                                <form class="login-form">
+                            Username <input class="login-input" type="text"><br>
+                            Password <input class="login-input" type="password">
+                            
+                            <span 
+                                class="small_text underline pointer login-forgot-password">
+                                Forgot Password?
+                            </span>
+    
+                            <input id="login" type="submit" value="LOG IN">
+                            <hr/>
+                        </form>
+    
+                        <p>Don't have an account?</p>
+                        <div id="register"><a href="register.php" style="display: block; width: 100%; height: 100%;"><span style="display:block; text-align: center; padding-top: 4px;">REGISTER</span></a></div>
+    
+                        <div class="login-box-arrow up-arrow"></div>
+
+                    </div>
+
+                    <!-- Forgot password tab -->
+                    <div id="forgot-password-tab" style="display: none">
+                        <i class="forgot-password-back fas fa-long-arrow-alt-left"></i>
+                        <div class="forgot-password-form login-form">
+                            <span class="forgot-password-desc small_text">Please enter your account name and email address. Instructions on how to reset your password will be sent.</span>
+
+                            Username
+                            <!-- Username field -->
+                            <input type="text" class="forgot-password-username login-input">
+
+                            Email
+                            <!-- Email field -->
+                            <input type="text" class="forgot-password-email login-input">
+                            <button class="forgot-password-submit">SEND</button>
+                        </div>
+                        <div class="forgot-password-res small_text" style="display: none"></div>
+                    </div>
+                </div>
+            </li>
+        
+            <li id="games-menu" onclick="void(0)">
+                Games
+                <ul id="games-dropdown" class="dropdown-menu">
+                    
+                    <li><a class="dropdown-menu-link" href="live_queue.php">Live Queue</a> <span id="dropdown-alert"><img src="terrain/newicon.png"></span></li>
+                    <div class="arrow up-arrow"></div>
+                    
+                    <li><a class="dropdown-menu-link" href="gamescurrent_all.php">View Active</a></li>
+                    <li><a class="dropdown-menu-link" href="gamescompleted.php">View Completed</a></li>
+                </ul>
+            </li>
+
+            <li id="competitions-menu" onclick="void(0)">
+                
+                Competitions
+                <ul id="competitions-dropdown" class="dropdown-menu">
+                    <li><a class="dropdown-menu-link" href="newleague.php">Global League</a></li>
+                    <li>
+                        <a class="dropdown-menu-link" href="viewtournament.php">Tournaments</a>
+                                            
+                        <div class="arrow up-arrow"></div>
+                    </li>
+
+                                    </ul>
+            </li>
+
+            <li id="design-maps-menu" onclick="void(0)">
+                Design Maps
+                <ul id="design-maps-dropdown" class="dropdown-menu">
+                    <li><a class="dropdown-menu-link" href="searchmaps.php">Search Maps</a></li>
+                    <li><a class="dropdown-menu-link" href="recentmaps.php">Recent Maps</a></li>
+                    <li><a class="dropdown-menu-link" href="categories.php">Categories</a></li>
+                                        <div class="arrow up-arrow"></div>
+                </ul>
+            </li>
+
+            <li id="right-side-menu">
+                <li id="community-menu" onclick="void(0)">
+                    Community
+                    <ul id="community-dropdown" class="dropdown-menu">
+                        <li><a class="dropdown-menu-link" href="users.php">Search Users</a></li>
+                        <li><a class="dropdown-menu-link" href="discord.php">Discord Chat</a></li>
+                        <li><a class="dropdown-menu-link" href="https://www.reddit.com/r/AWBW/">Reddit (r/AWBW)</a></li>
+                        <li>
+                                <span class="main-text"><a class="dropdown-menu-link" style="padding-right: 0px;" href="https://isndev.forumotion.co.uk/c2-advance-wars-by-web/">Forum</a></span>
+                                <span class="bracket-text">&nbsp;<a class="dropdown-menu-link" style="padding-left: 0px;" href="http://www.amarriner.com/awbw_forum/">[Archive]</a></span>
+                        </li>
+                        <li><a class="dropdown-menu-link" href="donate.php">Donate</a></li>
+                        <div class="arrow up-arrow"></div>
+                    </ul>
+                </li>
+                <li id="tools-menu" onclick="void(0)">
+                    Tools
+                    <ul id="tools-dropdown" class="dropdown-menu">
+                        <li><a class="dropdown-menu-link" href="moveplanner.php">Move Planner</a></li>
+                        <li><a class="dropdown-menu-link" href="calculator.php">Damage Calculator</a></li>
+                        
+                        
+                        <div class="arrow up-arrow"></div>
+                    </ul>
+                </li>
+                <li id="infos-menu" onclick="void(0)">
+                    
+                    Info
+                    <ul id="infos-dropdown" class="dropdown-menu">
+                        <li><a class="dropdown-menu-link" href="guide.php">FAQ</a></li>
+                        <li><a class="dropdown-menu-link" href="tutorials.php">Tutorials</a></li>
+                        <li id="changelog">
+
+                            <a class="dropdown-menu-link" href="changelog.php">Changelog</a>
+                            
+                        </li>
+                        <li><a class="dropdown-menu-link" href="chart.php">Charts</a></li>
+                        <li><a class="dropdown-menu-link" href="http://awbw.wikia.com/wiki/Advance_Wars_By_Web_Wiki">AWBW Wiki</a></li>
+                        <li><a class="dropdown-menu-link" href="https://warswiki.org/">Wars Wiki</a></li>
+                    </ul>
+                </li>
+
+                <li id="contact-menu">
+                    <a href="contact.php">Contact</a>
+                </li>
+
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div id="outer">
+
+    
+    <!-- <section id="main" style="overflow-x: scroll;"> -->
+    <section id="main"><div id="gamecontainer" style="position: relative; width: 100%;">
+<div id='game-header-table'>
+<div class='bold underline game-header-header'>
+<b><a class=bordertitle href="prevmaps.php?maps_id=151870">Great Ocean Road (SC2)</a></b>
+</div>
+<div class='game-header-body' style='height: 24px;'>
+Creator:&nbsp;<a href="profile.php?username=JJEmpire64">JJEmpire64</a>&nbsp;|| First Published: 09/26/2023 || Players: 2 || Size: 27x17
+</div>
+</div>
+<div id="map-controls-container">
+<div id="zoom-in" class="zoom-buttons" style="border-right:none;">
+<img title="Zoom in on the map" src="terrain/zoomin.gif">
+</div>
+<div id="zoom-out" class="zoom-buttons">
+<img title="Zoom out from the map" src="terrain/zoomout.gif">
+</div>
+<div id="replay-misc-controls" style="border: none;">
+<table cellspacing="0" cellpadding="0"><tr>
+<td class=borderwhite valign=middle>
+<table cellspacing="0" cellpadding="1">
+<tr>
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;"><a class=norm2 href="create.php?maps_id=151870" style="display:block; height: 100%;">
+<span class=small_text title="Create a game on this map" style="display: block; padding-top: 6px;">
+<img style="vertical-align: middle;" src="terrain/move.gif">
+<b style="vertical-align:middle;">Create Game</b>
+</span></a>
+</td>
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;"><a class=norm2 href="gamescurrent.php?maps_id=151870" style="display:block; height: 100%;">
+<span class=small_text title="View games on this map" style="display: block; padding-top: 6px;">
+<img style="vertical-align: middle;" src="terrain/aw1/gefighter.gif">
+<b style="vertical-align: middle;">View Games</b>
+</span></a>
+</td>
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;"><a class=norm2 href="moveplanner.php?maps_id=151870" style="display:block; height: 100%;">
+<span class=small_text title="Load map into move planner" style="display: block; padding-top: 6px;">
+<img style="vertical-align: middle;" src="terrain/moveplanner.gif">
+<b style="vertical-align: middle;">Planner</b>
+</span></a>
+</td>
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;;"><a class=norm2 href="analysis.php?maps_id=151870" style="display:block; height: 100%;">
+<span class=small_text title="View analysis of games on this map" style="display: block; padding-top: 6px;">
+<img style="vertical-align: middle;" src="terrain/userstats.gif">
+<b style="vertical-align: middle;">Map Analysis</b>
+</span></a>
+</td>
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;;"><a class=norm2 href="text_map.php?maps_id=151870" style="display:block; height: 100%;">
+<span class=small_text title="Export this map as text" style="display: block; padding-top: 6px;">
+<img style="vertical-align: middle;" src="terrain/gamelog.gif">
+<b style="vertical-align: middle;">Export As Text</b>
+</span></a>
+</td>
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;;"><a class=norm2 href="whosefavs.php?maps_id=151870" style="display:block; height: 100%;">
+<span class=small_text title="View users who favorited this map" style="display: block; padding-top: 6px;">
+<img style="vertical-align: middle;" src="terrain/favemaps.gif">
+<b style="vertical-align: middle;">View Favorites</b>
+</span></a>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+</div>
+</div>
+<div id="gamemap-container">
+<div id="gamemap">
+<img id="map-background" src=maps/C151870.png?v=1700416328 style='position:absolute; z-index:99;' border=1><span style='left:97; top:-8; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/whitenovabase.gif></span>
+<span style='left:161; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:289; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:385; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:49; top:15; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralairport.gif></span>
+<span style='left:97; top:17; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/hpipeseam.gif></span>
+<span style='left:193; top:11; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:257; top:11; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:337; top:11; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:17; top:27; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:65; top:24; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
+<span style='left:33; top:43; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralport.gif></span>
+<span style='left:225; top:43; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:257; top:49; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<span style='left:321; top:33; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/blackholehq.gif></span>
+<span style='left:161; top:59; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:193; top:65; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<span style='left:273; top:59; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:321; top:65; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<span style='left:401; top:56; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/blackholebase.gif></span>
+<span style='left:81; top:75; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:33; top:91; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:193; top:91; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:241; top:91; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:321; top:91; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:417; top:88; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
+<span style='left:81; top:104; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralbase.gif></span>
+<span style='left:161; top:107; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:65; top:123; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:145; top:129; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<span style='left:273; top:129; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<span style='left:353; top:123; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:257; top:139; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:337; top:136; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralbase.gif></span>
+<span style='left:1; top:152; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
+<span style='left:97; top:155; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:177; top:155; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:225; top:155; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:385; top:155; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:337; top:171; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:17; top:184; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/whitenovabase.gif></span>
+<span style='left:97; top:193; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<span style='left:145; top:187; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:225; top:193; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<span style='left:257; top:187; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:97; top:194; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/whitenovahq.gif></span>
+<span style='left:161; top:209; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<span style='left:193; top:203; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:385; top:203; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralport.gif></span>
+<span style='left:353; top:216; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
+<span style='left:401; top:219; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:81; top:235; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:161; top:235; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:225; top:235; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:321; top:241; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/hpipeseam.gif></span>
+<span style='left:369; top:239; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralairport.gif></span>
+<span style='left:33; top:251; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:129; top:251; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:257; top:251; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:321; top:248; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/blackholebase.gif></span>
+<span style='left:16; top:192; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/wninfantry.gif></span>
+<span style='left:96; top:208; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/wnblackboat.gif></span>
+<span style='left:320; top:48; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/bhblackboat.gif></span>
+</div>
+</div>
+<div id="map-categories" class=small_text style='position:relative; width:450px; margin-bottom: 10px;'>
+<table cellspacing=0 cellpadding=0 width=100%>
+<tr><td class=borderwhite height=25 style="padding:5px;">
+<span class=small_text_14><b>Categories:</b>
+None</span>
+</td></tr>
+<tr><td height=3></td></tr>
+<tr><td class="borderwhite"style="text-align:center; padding:4px;">
+<table>
+<tr>
+<td><b>Rating:</b></td>
+<td>5.33 in 6 ratings</td>
+</tr>
+</table>
+</td></tr>
+</table>
+</div>
+<div class=normal_text style='position:relative; width:800px; margin-bottom: 70px;'>
+<table cellpadding=4 cellspacing=0 style="table-layout: fixed; width: 100%;">
+<tr><td height=10 style="border-top: solid 1px blue;"></td></tr>
+<tr><td>For design map discussion or to get suggestions from other users, visit the <a href=discord.php>AWBW Discord Chat</a>!</td></tr>
+<tr><td class=bordertitle height=20><b>Comments:</b></td></tr>
+<tr>
+<td class=bordergrey style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
+<a class="anchor" name="comment_160334"></a>
+<span class=small_text_14 style="display: block; float: left;">
+<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=Ravena">Ravena</a> (10/08/2023 04:27pm):</b>
+</span>
+<span class=small_text_14><br>
+I'm gonna take my Boat to the Great Ocean Road, I'm gonna attack 'til I can't no more<br></span>
+</td>
+</tr>
+<tr>
+<td class=borderwhite style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
+<a class="anchor" name="comment_160351"></a>
+<span class=small_text_14 style="display: block; float: left;">
+<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=DrNasty">DrNasty</a> (10/10/2023 06:06pm<span style="font-size: 12px;"> | <i><b>Edited: 10/11/2023 04:24am</i></b></span>):</b>
+</span>
+<span class=small_text_14><br>
+seems like an interesting map<br></span>
+</td>
+</tr>
+<tr>
+<td class=bordergrey style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
+<a class="anchor" name="comment_160584"></a>
+<span class=small_text_14 style="display: block; float: left;">
+<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=Guitarlos_dos">Guitarlos_dos</a> (10/27/2023 01:27pm):</b>
+</span>
+<span class=small_text_14><br>
+don't build a battleship lol<br></span>
+</td>
+</tr>
+<tr>
+<td class=borderwhite style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
+<a class="anchor" name="comment_160724"></a>
+<span class=small_text_14 style="display: block; float: left;">
+<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=Zeitghast">Zeitghast</a> (11/08/2023 01:05am):</b>
+</span>
+<span class=small_text_14><br>
+Drake mentioned?<br></span>
+</td>
+</tr>
+<tr>
+<td class=bordergrey style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
+<a class="anchor" name="comment_160767"></a>
+<span class=small_text_14 style="display: block; float: left;">
+<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=TwoYearsGone">TwoYearsGone</a> (11/11/2023 01:07pm):</b>
+</span>
+<span class=small_text_14><br>
+Another Kindle mirror map <br></span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+      <script type="text/javascript">
+         const gamemapContainer = document.getElementById("gamemap-container"),
+         gamemap = document.getElementById("gamemap"),
+         map = document.getElementById("map-background"),
+         zoomInButton = document.getElementById("zoom-in"),
+         zoomOutButton = document.getElementById("zoom-out"),
+         dimURL = window.location.href.match(/id=\d+/)[0],
+	      dimID = dimURL.match(/\d+/)[0];
+
+         var scale = localStorage.scale ? parseFloat(localStorage.scale) : 1;
+
+         
+         if(sessionStorage[dimID + "Width"]) {
+            applyCSS(gamemapContainer, {
+               height: (parseInt(sessionStorage[dimID + "Height"]) * scale) + "px",
+               width: (parseInt(sessionStorage[dimID + "Width"]) * scale) + "px"
+            });
+            applyCSS(gamemap, {
+               transform: "scale(" + scale + ")",
+               webkitTransform: "scale(" + scale + ")"
+            });
+         } else {
+            map.onload = function () {
+               applyCSS(gamemapContainer, {
+                  height: (map.height * scale) + "px",
+                  width: (map.width * scale) + "px"
+               })
+               sessionStorage.setItem(dimID + "Width", map.width);
+               sessionStorage.setItem(dimID + "Height", map.height);
+            }
+         }
+
+         function imgLoaded(imgElement) {
+            return imgElement.complete && imgElement.naturalHeight !== 0;
+         }
+
+         window.onload = function () {
+            applyCSS(gamemapContainer, {
+                  height: (map.height * scale) + "px",
+                  width: (map.width * scale) + "px"
+            }) 
+            var initialScale = scaleAdd(0);
+            
+            applyCSS(gamemapContainer, {
+                  visibility: 'visible'
+            })
+         };
+
+         var new_width, scaled_height;
+
+         function scaleAdd(n) {
+               
+            if (scale < 0.5 && n < 0) { return; } //do not allow to get too small
+            else if (scale > 2.9 && n > 0) { return; } //do not allow to get too big
+
+            else {
+               scale += n; //increase scale
+
+               new_width = parseInt(map.width) * scale;
+
+               //make scrollable if too big
+               if (new_width > 1190) {
+                     scaled_height = 1190 * (map.height / map.width);
+
+                     applyCSS(gamemapContainer, {
+                           height: scaled_height + "px",
+                           width: "1190px"
+                     });
+
+                     gamemapContainer.style.overflowY = 'visible';
+                     gamemapContainer.style.overflowX = 'scroll';
+
+                     gamemap.style.transform = "scale(" + scale + ")";
+                     gamemap.style.webkitTransform = "scale(" + scale + ")";
+
+               }
+
+               //otherwise scale
+               else {
+                     // console.log("Every other change now");
+                     applyCSS(gamemapContainer, {
+                           height: (map.height * scale) + "px",
+                           width: (map.width * scale) + "px",
+                           overflow: "visible"
+                     });
+                     gamemap.style.transform = "scale(" + scale + ")";
+                     gamemap.style.webkitTransform = "scale(" + scale + ")";
+
+               }
+
+               localStorage.setItem("scale", scale);
+            } 
+         }
+         zoomInButton.addEventListener("click", function() { scaleAdd(0.1) });
+         zoomOutButton.addEventListener("click", function() { scaleAdd(-0.1) });
+
+         function applyCSS(el, styles) {
+            for(prop in styles) {
+               el.style[prop] = styles[prop];
+            }
+         }
+
+        //function to toggle categorization field
+        function ToggleSection() {
+
+            var thisTable = document.getElementById("MC_cats");
+
+            //tables
+            if (thisTable.style.display === "none") {
+                thisTable.style.display = "block";
+            }
+
+            else {
+                thisTable.style.display = "none";
+            }
+        }
+
+      </script>
+
+<span><br><br><br></span>
+<span class=small_text_11>
+Advance Wars is (c) 1990-2001 <a href="http://www.nintendo.com">Nintendo</a> and (c) 2001 <a href="http://www.intsys.co.jp/">Intelligent Systems</a>. All images are copyright their respective owners.<br><br>
+<!-- End Page (1700416328) (0) (12:52:8) -->
+</span>
+</section>
+</div>
+
+      <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+      <script src="js/axios.min.js"></script>
+      <!-- Script for the login box -->
+      <script>
+            var login = document.getElementById("login"),
+                  formElements = [].slice.call(document.getElementsByClassName("login-input")),
+                  loginForm = document.querySelector(".login-form"),
+                  errSpan = document.getElementById("login-err"),
+                  usernameInput = formElements[0],
+                  passwordInput = formElements[1];
+            var errMsg;
+
+            var loginBox = document.querySelector("#login-tab");
+            var forgotPassword = document.querySelector(".login-forgot-password");
+            var forgotPasswordTab = document.querySelector("#forgot-password-tab");
+            var forgotPasswordForm = document.querySelector(".forgot-password-form");
+
+            var forgotPasswordSubmit = document.querySelector(".forgot-password-submit");
+            var forgotPasswordRes = document.querySelector(".forgot-password-res");
+            
+            forgotPassword.onclick = function() {
+                  toggleDisplays([
+                        { el: loginBox, display: "none" }, 
+                        { el: forgotPasswordTab, display: "block"}
+                  ]);
+
+                  var forgotPasswordBack = document.querySelector(".forgot-password-back");
+                  forgotPasswordBack.onclick = function() {
+                        //Reset to initial state
+                        toggleDisplays([
+                              { el: loginBox, display: "block" },
+                              { el: forgotPasswordTab, display: "none" },
+                              { el: forgotPasswordForm, display: "flex" },
+                              { el: forgotPasswordRes, display: "none" }
+                        ]);
+                  }
+            }
+
+            forgotPasswordSubmit.onclick = function() {
+                  var forgotPasswordUsername = document.querySelector(".forgot-password-username");
+                  var forgotPasswordEmail = document.querySelector(".forgot-password-email");
+
+                  axios.post("api/forgot_password.php", { 
+                        username: forgotPasswordUsername.value,
+                        email: forgotPasswordEmail.value 
+                  })
+                  .then(function(res) {
+
+                        forgotPasswordRes.textContent = res.data.message;
+
+                        toggleDisplays([
+                              { el: forgotPasswordForm, display: "none" },
+                              { el: forgotPasswordRes, display: "block" }
+                        ]);
+                  })
+            }
+
+            //Used for the login box's tabs
+            function toggleDisplays(tabs) {
+                  tabs.forEach(function(tab) { tab.el.style.display = tab.display });
+            }
+            
+            login.onclick = function(e) {
+                  e.preventDefault();
+                  const uc = verifyEmpty(usernameInput),
+                        pc = verifyEmpty(passwordInput);
+                  if(uc && pc) {
+                        formElements.forEach(function(el) {
+                              el.style.background = "";
+                        })
+                        verifyLogin().done(function(match) {
+                              //1 means match, 0 means no match
+                              if(match == 0) { showErr(); }
+                              else if(match == 1) { loginForm.submit(); loadCurrPage(); }
+                        })
+                  }
+            }   
+            function verifyEmpty(el) {
+                  if(el.value.length === 0) {
+                        showErr()
+                        return false;
+                  }
+                  else return true;
+            } 
+            function verifyLogin() {
+                  const post = $.post("logincheck.php", {username: usernameInput.value, password: passwordInput.value});
+                  return post;
+            }
+            function showErr() {
+                  var errMsg = "Username or Password is incorrect";
+                  errSpan.textContent = errMsg;
+            }
+            function loadCurrPage() {
+                  window.location = 'prevmaps.php?maps_id=151870';
+                  return false;
+            }
+      </script>
+
+      <script>
+            const fixedHeader = document.getElementById("fixed-header-wrapper");
+            let smallHeader = false;
+            if(window.pageYOffset !== 0) {
+                  fixedHeader.classList.add("header-small")
+            }
+            document.body.onscroll = function() {
+                  if(window.pageYOffset !== 0 && smallHeader === false) {
+                        // console.log("?");
+                        smallHeader = true;
+                        fixedHeader.classList.add("header-small");
+                  } else if(window.pageYOffset === 0) {
+                        smallHeader = false;
+                        fixedHeader.classList.remove("header-small");
+                  }
+            }
+            
+
+      </script>
+<script src="js/jquery-3.3.1.min.js"></script>
+</body>
+</html>
