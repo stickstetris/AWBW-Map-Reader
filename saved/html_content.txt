@@ -26,7 +26,7 @@
 </script>
 </head>
 <body>
-<!-- Begin Page (1700416328) (12:52:8) -->
+<!-- Begin Page (1700418295) (13:24:55) -->
 <div id="overDiv" style="position:absolute; visibility:hidden; z-index:900;"></div>
 <script type="text/javascript" language="JavaScript" src="js/overlib_mini_minify.js?v=1.0"></script>
 
@@ -250,7 +250,7 @@ Creator:&nbsp;<a href="profile.php?username=JJEmpire64">JJEmpire64</a>&nbsp;|| F
 </div>
 <div id="gamemap-container">
 <div id="gamemap">
-<img id="map-background" src=maps/C151870.png?v=1700416328 style='position:absolute; z-index:99;' border=1><span style='left:97; top:-8; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/whitenovabase.gif></span>
+<img id="map-background" src=maps/C151870.png?v=1700418295 style='position:absolute; z-index:99;' border=1><span style='left:97; top:-8; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/whitenovabase.gif></span>
 <span style='left:161; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
 <span style='left:289; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
 <span style='left:385; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
@@ -513,7 +513,7 @@ Another Kindle mirror map <br></span>
 <span><br><br><br></span>
 <span class=small_text_11>
 Advance Wars is (c) 1990-2001 <a href="http://www.nintendo.com">Nintendo</a> and (c) 2001 <a href="http://www.intsys.co.jp/">Intelligent Systems</a>. All images are copyright their respective owners.<br><br>
-<!-- End Page (1700416328) (0) (12:52:8) -->
+<!-- End Page (1700418295) (0) (13:24:55) -->
 </span>
 </section>
 </div>

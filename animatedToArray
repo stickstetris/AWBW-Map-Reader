@@ -2,19 +2,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_html_content(url, save_path='AWBW-Map-Reader\html_content.txt'):
-    response = requests.get(url)
-    
-    if response.status_code == 200:
-        html_content = response.text
-        with open(save_path, 'w', encoding='utf-8') as file:
-            file.write(html_content)
-        print(f"HTML content saved to {save_path}")
-        return save_path
-    else:
-        print(f"Failed to retrieve the page. Status code: {response.status_code}")
-        return None
-
 def arrayIndexToCoordinateLeft(left): #The coordinates for left and top of the website source do not match, here's the conversion function
     return left * 16 + 1
 
@@ -29,7 +16,7 @@ def print_src_with_style(leftNum, topNum):
 
 
     for current_top in top_values_to_check:
-        with open('AWBW-Map-Reader\html_content.txt', 'r', encoding='utf-8') as file:
+        with open('AWBW-Map-Reader\saved\html_content.txt', 'r', encoding='utf-8') as file:
             relevant_lines = file.readlines()[250:400]
             html_content = "\n".join(relevant_lines)
             

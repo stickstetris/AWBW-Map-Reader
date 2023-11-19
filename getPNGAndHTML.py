@@ -1,9 +1,9 @@
-#Given a url to a map, saves the PNG file of the map to be used.
+#Given a url to a map, saves the html of the page and the PNG file of the map to be used 
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-def downloadMapImage(url, save_path='map.png'):
+def downloadMapImage(url, save_path='AWBW-Map-READER/saved/map.png'):
     response = requests.get(url)
 
     # Check if the request was successful (status code 200)
@@ -32,5 +32,20 @@ def downloadMapImage(url, save_path='map.png'):
     else:
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
+
+def download_html(url, save_path='AWBW-Map-Reader\saved\html_content.txt'):
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        html_content = response.text
+        with open(save_path, 'w', encoding='utf-8') as file:
+            file.write(html_content)
+        print(f"HTML content saved to {save_path}")
+        return save_path
+    else:
+        print(f"Failed to retrieve the page. Status code: {response.status_code}")
+        return None
+    
 website_url = 'https://awbw.amarriner.com/prevmaps.php?maps_id=151870'
 downloadMapImage(website_url)
+download_html(website_url)
