@@ -22,40 +22,56 @@ def divide_into_tiles(image, tile_size):
 def compare_tiles(tile, reference_tiles):
     """
     Compare a tile with a set of reference tiles.
+    Return the name of the best-matching tile.
     """
-    best_match_index = 0
-    best_match_score = float('inf')
+    best_match_name = ""
+    best_match_score = float('-inf')  # Initialize with a low value for correlation
 
-    for i, reference_tile in enumerate(reference_tiles):
-        score = np.sum(np.abs(tile - reference_tile))
-        if score < best_match_score:
-            best_match_score = score
-            best_match_index = i
+    for tile_name, reference_tile in zip(['bridge', 'empty', 'forest', 'mountain', 'ocean', 'ocean2', 'pipe', 'pipe2', 'plain', 'river', 'road', 'road2', 'shoal'], reference_tiles):
+        hist_comparison = cv2.compareHist(cv2.calcHist([tile], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256]),
+                                          cv2.calcHist([reference_tile], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256]),
+                                          cv2.HISTCMP_CORREL)
 
-    return best_match_index
+        if hist_comparison > best_match_score:
+            best_match_score = hist_comparison
+            best_match_name = tile_name
+
+    return best_match_name
 
 def map_tiles_to_array(tiles, rows, cols, reference_tiles):
     """
     Map tiles to a 2D array based on comparison with reference tiles.
+    Return an array of tile names.
     """
-    tile_map = np.zeros((rows, cols), dtype=int)
+    tile_map = np.empty((rows, cols), dtype=np.dtype('U10'))
 
     for i in range(rows):
         for j in range(cols):
-            tile_index = compare_tiles(tiles[i * cols + j], reference_tiles)
-            tile_map[i, j] = tile_index
+            tile_name = compare_tiles(tiles[i * cols + j], reference_tiles)
+            tile_map[i, j] = tile_name
 
     return tile_map
 
 # Load the map image
-map_image = cv2.imread('path/to/your/map.png')
+map_image = cv2.imread('map.png')
 
 # Load reference tiles
-reference_tile1 = cv2.imread('path/to/your/reference_tile1.png')
-reference_tile2 = cv2.imread('path/to/your/reference_tile2.png')
-# Add more reference tiles as needed
+bridge = cv2.imread('tiles/bridge.png')
+empty = cv2.imread('tiles/empty.png')
+forest = cv2.imread('tiles/forest.png')
+mountain = cv2.imread('tiles/mountain.png')
+ocean = cv2.imread('tiles/ocean.png')
+ocean2 = cv2.imread('tiles/ocean2.png')
+pipe = cv2.imread('tiles/pipe.png')
+pipe2 = cv2.imread('tiles/pipe2.png')
+plain = cv2.imread('tiles/plain.png')
+river = cv2.imread('tiles/river.png')
+road = cv2.imread('tiles/road.png')
+road2 = cv2.imread('tiles/road2.png')
+shoal = cv2.imread('tiles/shoal.png')
+shoal2 = cv2.imread('tiles/shoal.png')
 
-reference_tiles = [reference_tile1, reference_tile2]  # Add your reference tiles to this list
+reference_tiles = [bridge, empty, forest, mountain, ocean, ocean2, pipe, pipe2, plain, river, road, road2, shoal, shoal2]
 
 # Set the tile size
 tile_size = 16
@@ -68,3 +84,4 @@ tile_map = map_tiles_to_array(tiles, rows, cols, reference_tiles)
 
 # Print or use the resulting tile map
 print(tile_map)
+

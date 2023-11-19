@@ -18,11 +18,14 @@ def downloadMapImage(url, save_path='map.png'):
             # Extract the image URL
             img_url = urljoin(url, img_tag['src'])
 
-            # Download the image
-            img_data = requests.get(img_url).content
+            # Modify the image URL
+            modified_img_url = img_url.replace('/maps/', '/maps_test/aw2/')
+
+            # Download the modified image
+            img_data = requests.get(modified_img_url).content
             with open(save_path, 'wb') as f:
                 f.write(img_data)
-            
+
             print(f"Image downloaded and saved to {save_path}")
         else:
             print("No image found with id 'map-background'.")
