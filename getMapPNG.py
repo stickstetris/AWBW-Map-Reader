@@ -1,4 +1,4 @@
-#Given a url to a map, returns a PNG file of the map to be used.
+#Given a url to a map, saves the PNG file of the map to be used.
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
