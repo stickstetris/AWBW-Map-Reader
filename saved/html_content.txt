@@ -26,7 +26,7 @@
 </script>
 </head>
 <body>
-<!-- Begin Page (1700441743) (19:55:43) -->
+<!-- Begin Page (1700449576) (22:6:16) -->
 <div id="overDiv" style="position:absolute; visibility:hidden; z-index:900;"></div>
 <script type="text/javascript" language="JavaScript" src="js/overlib_mini_minify.js?v=1.0"></script>
 
@@ -188,10 +188,10 @@
     <section id="main"><div id="gamecontainer" style="position: relative; width: 100%;">
 <div id='game-header-table'>
 <div class='bold underline game-header-header'>
-<b><a class=bordertitle href="prevmaps.php?maps_id=151870">Great Ocean Road (SC2)</a></b>
+<b><a class=bordertitle href="prevmaps.php?maps_id=110424">Velvet Dawn</a></b>
 </div>
 <div class='game-header-body' style='height: 24px;'>
-Creator:&nbsp;<a href="profile.php?username=JJEmpire64">JJEmpire64</a>&nbsp;|| First Published: 09/26/2023 || Players: 2 || Size: 27x17
+Creator:&nbsp;<a href="profile.php?username=Pinwheel">Pinwheel</a>&nbsp;|| First Published: 11/10/2021 || Players: 2 || Size: 17x18
 </div>
 </div>
 <div id="map-controls-container">
@@ -206,37 +206,37 @@ Creator:&nbsp;<a href="profile.php?username=JJEmpire64">JJEmpire64</a>&nbsp;|| F
 <td class=borderwhite valign=middle>
 <table cellspacing="0" cellpadding="1">
 <tr>
-<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;"><a class=norm2 href="create.php?maps_id=151870" style="display:block; height: 100%;">
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;"><a class=norm2 href="create.php?maps_id=110424" style="display:block; height: 100%;">
 <span class=small_text title="Create a game on this map" style="display: block; padding-top: 6px;">
 <img style="vertical-align: middle;" src="terrain/move.gif">
 <b style="vertical-align:middle;">Create Game</b>
 </span></a>
 </td>
-<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;"><a class=norm2 href="gamescurrent.php?maps_id=151870" style="display:block; height: 100%;">
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;"><a class=norm2 href="gamescurrent.php?maps_id=110424" style="display:block; height: 100%;">
 <span class=small_text title="View games on this map" style="display: block; padding-top: 6px;">
 <img style="vertical-align: middle;" src="terrain/aw1/gefighter.gif">
 <b style="vertical-align: middle;">View Games</b>
 </span></a>
 </td>
-<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;"><a class=norm2 href="moveplanner.php?maps_id=151870" style="display:block; height: 100%;">
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;"><a class=norm2 href="moveplanner.php?maps_id=110424" style="display:block; height: 100%;">
 <span class=small_text title="Load map into move planner" style="display: block; padding-top: 6px;">
 <img style="vertical-align: middle;" src="terrain/moveplanner.gif">
 <b style="vertical-align: middle;">Planner</b>
 </span></a>
 </td>
-<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;;"><a class=norm2 href="analysis.php?maps_id=151870" style="display:block; height: 100%;">
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;;"><a class=norm2 href="analysis.php?maps_id=110424" style="display:block; height: 100%;">
 <span class=small_text title="View analysis of games on this map" style="display: block; padding-top: 6px;">
 <img style="vertical-align: middle;" src="terrain/userstats.gif">
 <b style="vertical-align: middle;">Map Analysis</b>
 </span></a>
 </td>
-<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;;"><a class=norm2 href="text_map.php?maps_id=151870" style="display:block; height: 100%;">
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;;"><a class=norm2 href="text_map.php?maps_id=110424" style="display:block; height: 100%;">
 <span class=small_text title="Export this map as text" style="display: block; padding-top: 6px;">
 <img style="vertical-align: middle;" src="terrain/gamelog.gif">
 <b style="vertical-align: middle;">Export As Text</b>
 </span></a>
 </td>
-<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;;"><a class=norm2 href="whosefavs.php?maps_id=151870" style="display:block; height: 100%;">
+<td class=norm height=30 style="text-align:left; padding-left: 10px; padding-right: 10px;;"><a class=norm2 href="whosefavs.php?maps_id=110424" style="display:block; height: 100%;">
 <span class=small_text title="View users who favorited this map" style="display: block; padding-top: 6px;">
 <img style="vertical-align: middle;" src="terrain/favemaps.gif">
 <b style="vertical-align: middle;">View Favorites</b>
@@ -250,83 +250,61 @@ Creator:&nbsp;<a href="profile.php?username=JJEmpire64">JJEmpire64</a>&nbsp;|| F
 </div>
 <div id="gamemap-container">
 <div id="gamemap">
-<img id="map-background" src=maps/C151870.png?v=1700441743 style='position:absolute; z-index:99;' border=1><span style='left:97; top:-8; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/whitenovabase.gif></span>
-<span style='left:161; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:289; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:385; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:49; top:15; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralairport.gif></span>
-<span style='left:97; top:17; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/hpipeseam.gif></span>
-<span style='left:193; top:11; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:257; top:11; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:337; top:11; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:17; top:27; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:65; top:24; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
-<span style='left:33; top:43; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralport.gif></span>
-<span style='left:225; top:43; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:257; top:49; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
-<span style='left:321; top:33; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/blackholehq.gif></span>
-<span style='left:161; top:59; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:193; top:65; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
-<span style='left:273; top:59; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:321; top:65; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
-<span style='left:401; top:56; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/blackholebase.gif></span>
-<span style='left:81; top:75; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:33; top:91; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:193; top:91; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:241; top:91; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:321; top:91; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:417; top:88; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
-<span style='left:81; top:104; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralbase.gif></span>
-<span style='left:161; top:107; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:65; top:123; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:145; top:129; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
-<span style='left:273; top:129; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
-<span style='left:353; top:123; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:257; top:139; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:337; top:136; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralbase.gif></span>
-<span style='left:1; top:152; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
-<span style='left:97; top:155; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:177; top:155; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:225; top:155; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:385; top:155; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:337; top:171; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:17; top:184; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/whitenovabase.gif></span>
-<span style='left:97; top:193; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
-<span style='left:145; top:187; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:225; top:193; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
-<span style='left:257; top:187; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:97; top:194; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/whitenovahq.gif></span>
-<span style='left:161; top:209; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
-<span style='left:193; top:203; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:385; top:203; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralport.gif></span>
-<span style='left:353; top:216; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
-<span style='left:401; top:219; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:81; top:235; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:161; top:235; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:225; top:235; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:321; top:241; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/hpipeseam.gif></span>
-<span style='left:369; top:239; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralairport.gif></span>
-<span style='left:33; top:251; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:129; top:251; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:257; top:251; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
-<span style='left:321; top:248; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/blackholebase.gif></span>
-<span style='left:16; top:192; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/wninfantry.gif></span>
-<span style='left:96; top:208; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/wnblackboat.gif></span>
-<span style='left:320; top:48; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/bhblackboat.gif></span>
+<img id="map-background" src=maps/C110424.png?v=1700449576 style='position:absolute; z-index:99;' border=1><span style='left:33; top:-8; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/browndesertbase.gif></span>
+<span style='left:177; top:-5; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:49; top:17; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/hpipeseam.gif></span>
+<span style='left:97; top:8; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralbase.gif></span>
+<span style='left:241; top:11; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:1; top:27; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:209; top:27; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:17; top:40; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/browndesertbase.gif></span>
+<span style='left:97; top:43; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:161; top:43; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:97; top:56; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
+<span style='left:177; top:75; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:241; top:75; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:1; top:95; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralairport.gif></span>
+<span style='left:113; top:91; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:49; top:107; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:209; top:98; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/tealgalaxyhq.gif></span>
+<span style='left:161; top:123; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:257; top:123; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:1; top:139; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:97; top:139; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:49; top:146; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/browndeserthq.gif></span>
+<span style='left:209; top:155; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:145; top:171; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:257; top:175; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralairport.gif></span>
+<span style='left:17; top:187; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:81; top:187; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:161; top:200; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcomtower.gif></span>
+<span style='left:97; top:219; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:161; top:219; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:241; top:216; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/tealgalaxybase.gif></span>
+<span style='left:49; top:235; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:257; top:235; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:17; top:251; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:161; top:248; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralbase.gif></span>
+<span style='left:209; top:257; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/hpipeseam.gif></span>
+<span style='left:81; top:267; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralcity.gif></span>
+<span style='left:225; top:264; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/tealgalaxybase.gif></span>
+<span style='left:48; top:160; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/bdblackboat.gif></span>
+<span style='left:208; top:112; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/tgblackboat.gif></span>
+<span style='left:224; top:272; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/tginfantry.gif></span>
 </div>
 </div>
 <div id="map-categories" class=small_text style='position:relative; width:450px; margin-bottom: 10px;'>
 <table cellspacing=0 cellpadding=0 width=100%>
 <tr><td class=borderwhite height=25 style="padding:5px;">
 <span class=small_text_14><b>Categories:</b>
-None</span>
+<a href="categories.php?categories_id=22">B-Rank</a>, <a href="categories.php?categories_id=34">Fog of War</a>, <a href="categories.php?categories_id=40">Live Play</a></span>
 </td></tr>
 <tr><td height=3></td></tr>
 <tr><td class="borderwhite"style="text-align:center; padding:4px;">
 <table>
 <tr>
 <td><b>Rating:</b></td>
-<td>5.33 in 6 ratings</td>
+<td>6.00 in 2 ratings</td>
 </tr>
 </table>
 </td></tr>
@@ -338,53 +316,23 @@ None</span>
 <tr><td>For design map discussion or to get suggestions from other users, visit the <a href=discord.php>AWBW Discord Chat</a>!</td></tr>
 <tr><td class=bordertitle height=20><b>Comments:</b></td></tr>
 <tr>
-<td class=bordergrey style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
-<a class="anchor" name="comment_160334"></a>
+<td class=bordergrey_mc style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
+<a class="anchor" name="comment_144665"></a>
 <span class=small_text_14 style="display: block; float: left;">
-<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=Ravena">Ravena</a> (10/08/2023 04:27pm):</b>
+<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=Pinwheel">Pinwheel</a> (11/10/2021 09:22am):</b>
 </span>
 <span class=small_text_14><br>
-I'm gonna take my Boat to the Great Ocean Road, I'm gonna attack 'til I can't no more<br></span>
+For Fog<br></span>
 </td>
 </tr>
 <tr>
 <td class=borderwhite style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
-<a class="anchor" name="comment_160351"></a>
+<a class="anchor" name="comment_149735"></a>
 <span class=small_text_14 style="display: block; float: left;">
-<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=DrNasty">DrNasty</a> (10/10/2023 06:06pm<span style="font-size: 12px;"> | <i><b>Edited: 10/11/2023 04:24am</i></b></span>):</b>
+<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=ais523">ais523</a> (05/29/2022 09:56pm<span style="font-size: 12px;"> | <i><b>Edited: 05/29/2022 10:33pm</i></b></span>):</b>
 </span>
 <span class=small_text_14><br>
-seems like an interesting map<br></span>
-</td>
-</tr>
-<tr>
-<td class=bordergrey style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
-<a class="anchor" name="comment_160584"></a>
-<span class=small_text_14 style="display: block; float: left;">
-<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=Guitarlos_dos">Guitarlos_dos</a> (10/27/2023 01:27pm):</b>
-</span>
-<span class=small_text_14><br>
-don't build a battleship lol<br></span>
-</td>
-</tr>
-<tr>
-<td class=borderwhite style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
-<a class="anchor" name="comment_160724"></a>
-<span class=small_text_14 style="display: block; float: left;">
-<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=Zeitghast">Zeitghast</a> (11/08/2023 01:05am):</b>
-</span>
-<span class=small_text_14><br>
-Drake mentioned?<br></span>
-</td>
-</tr>
-<tr>
-<td class=bordergrey style="border-top: none; white-space: normal; word-wrap: break-word; width: 100%;">
-<a class="anchor" name="comment_160767"></a>
-<span class=small_text_14 style="display: block; float: left;">
-<b><a class=norm style="color: black; font-weight: bold;" href="profile.php?username=TwoYearsGone">TwoYearsGone</a> (11/11/2023 01:07pm):</b>
-</span>
-<span class=small_text_14><br>
-Another Kindle mirror map <br></span>
+The HQs seem much too exposed on this map. The problem is that it's effectively impossible to scout for what units might be <br>attacking and/or defending the HQ at long range (you can't get recons deep enough into opposing territory), and an HQ <br>capture is generally very easy, so games come down to who correctly guesses the right unit mix to pull off or prevent an <br>early HQ capture.<br><br>Because of this, the map also strongly favours COs who can capture the HQ, or prevent an HQ capture, with a cheap CO <br>power. I played the map as Max, and when I saw I was in trouble, prevented a loss due to being able to trigger enough <br>combat to charge Max Force and buy myself a critical extra square to save the HQ. My opponent's regular CO power didn't <br>provide global damage or movement, and as such was unable to prevent my HQ capture attempt on the very next turn, which <br>is what decided the game.<br><br>I recommend swapping the HQs with the cities three spaces away from them – that still gives an exposed target to aim for, <br>allowing games to end, but one that isn't so exposed as to make the game mostly luck-based.<br></span>
 </td>
 </tr>
 </table>
@@ -513,7 +461,7 @@ Another Kindle mirror map <br></span>
 <span><br><br><br></span>
 <span class=small_text_11>
 Advance Wars is (c) 1990-2001 <a href="http://www.nintendo.com">Nintendo</a> and (c) 2001 <a href="http://www.intsys.co.jp/">Intelligent Systems</a>. All images are copyright their respective owners.<br><br>
-<!-- End Page (1700441743) (0) (19:55:43) -->
+<!-- End Page (1700449576) (0) (22:6:16) -->
 </span>
 </section>
 </div>
@@ -611,7 +559,7 @@ Advance Wars is (c) 1990-2001 <a href="http://www.nintendo.com">Nintendo</a> and
                   errSpan.textContent = errMsg;
             }
             function loadCurrPage() {
-                  window.location = 'prevmaps.php?maps_id=151870';
+                  window.location = 'prevmaps.php?maps_id=110424';
                   return false;
             }
       </script>
