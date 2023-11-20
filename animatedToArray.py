@@ -7,16 +7,15 @@ def arrayIndexToCoordinateLeft(left): #The coordinates for left and top of the w
 
 def arrayIndexToCoordinateTop(top):
 
-    return (top) * 16
+    return (top) * 16 + 1
 
 def findTile(leftNum, topNum):
-
     leftNum = arrayIndexToCoordinateLeft(leftNum)
     topNum = arrayIndexToCoordinateTop(topNum)
 
 
     # Values to check for topNum
-    top_values_to_check = [topNum, topNum - 1, topNum - 5, topNum - 8]
+    top_values_to_check = [topNum, topNum - 2, topNum - 6, topNum - 9, topNum - 15]
 
     
 
@@ -46,7 +45,6 @@ def findTile(leftNum, topNum):
                     return matched_keyword
                 else:
                     print(f"No matching keyword found for style 'left:{leftNum}; top:{current_top}'.")
-                return  # Exit the function if the element is found
+                
 
-    print(f"Failed to find the element after checking all values.")
 
