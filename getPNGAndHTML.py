@@ -46,6 +46,7 @@ def download_html(url, save_path='AWBW-Map-Reader\saved\html_content.txt'):
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
         return None
     
-website_url = 'https://awbw.amarriner.com/prevmaps.php?maps_id=151870'
-downloadMapImage(website_url)
-download_html(website_url)
+
+def getBoth(url):
+    download_html(url)
+    downloadMapImage(url)

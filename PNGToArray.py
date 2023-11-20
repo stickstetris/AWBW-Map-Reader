@@ -52,36 +52,37 @@ def map_tiles_to_array(tiles, rows, cols, reference_tiles):
 
     return tile_map
 
-# Load the map image
-map_image = cv2.imread('AWBW-Map-Reader\saved\map.png')
 
-# Load reference tiles
-bridge = cv2.imread('AWBW-Map-Reader/tiles/bridge.png')
-empty = cv2.imread('AWBW-Map-Reader/tiles/empty.png')
-forest = cv2.imread('AWBW-Map-Reader/tiles/forest.png')
-mountain = cv2.imread('AWBW-Map-Reader/tiles/mountain.png')
-ocean = cv2.imread('AWBW-Map-Reader/tiles/ocean.png')
-ocean2 = cv2.imread('AWBW-Map-Reader/tiles/ocean2.png')
-pipe = cv2.imread('AWBW-Map-Reader/tiles/pipe.png')
-pipe2 = cv2.imread('AWBW-Map-Reader/tiles/pipe2.png')
-plain = cv2.imread('AWBW-Map-Reader/tiles/plain.png')
-river = cv2.imread('AWBW-Map-Reader/tiles/river.png')
-road = cv2.imread('AWBW-Map-Reader/tiles/road.png')
-road2 = cv2.imread('AWBW-Map-Reader/tiles/road2.png')
-shoal = cv2.imread('AWBW-Map-Reader/tiles/shoal.png')
-shoal2 = cv2.imread('AWBW-Map-Reader/tiles/shoal.png')
+def getMapArray():
+    # Load the map image
+    map_image = cv2.imread('AWBW-Map-Reader\saved\map.png')
 
-reference_tiles = [bridge, empty, forest, mountain, ocean, ocean2, pipe, pipe2, plain, river, road, road2, shoal, shoal2]
+    # Load reference tiles
+    bridge = cv2.imread('AWBW-Map-Reader/tiles/bridge.png')
+    empty = cv2.imread('AWBW-Map-Reader/tiles/empty.png')
+    forest = cv2.imread('AWBW-Map-Reader/tiles/forest.png')
+    mountain = cv2.imread('AWBW-Map-Reader/tiles/mountain.png')
+    ocean = cv2.imread('AWBW-Map-Reader/tiles/ocean.png')
+    ocean2 = cv2.imread('AWBW-Map-Reader/tiles/ocean2.png')
+    pipe = cv2.imread('AWBW-Map-Reader/tiles/pipe.png')
+    pipe2 = cv2.imread('AWBW-Map-Reader/tiles/pipe2.png')
+    plain = cv2.imread('AWBW-Map-Reader/tiles/plain.png')
+    river = cv2.imread('AWBW-Map-Reader/tiles/river.png')
+    road = cv2.imread('AWBW-Map-Reader/tiles/road.png')
+    road2 = cv2.imread('AWBW-Map-Reader/tiles/road2.png')
+    shoal = cv2.imread('AWBW-Map-Reader/tiles/shoal.png')
+    shoal2 = cv2.imread('AWBW-Map-Reader/tiles/shoal.png')
 
-# Set the tile size
-tile_size = 16
+    reference_tiles = [bridge, empty, forest, mountain, ocean, ocean2, pipe, pipe2, plain, river, road, road2, shoal, shoal2]
 
-# Divide the map into tiles
-tiles, rows, cols = divide_into_tiles(map_image, tile_size)
+    # Set the tile size
+    tile_size = 16
 
-# Map tiles to a 2D array
-tile_map = map_tiles_to_array(tiles, rows, cols, reference_tiles)
+    # Divide the map into tiles
+    tiles, rows, cols = divide_into_tiles(map_image, tile_size)
 
-# Print or use the resulting tile map
-print(tile_map)
+    # Map tiles to a 2D array
+    tile_map = map_tiles_to_array(tiles, rows, cols, reference_tiles)
 
+    # Print or use the resulting tile map
+    return tile_map

@@ -9,11 +9,16 @@ def arrayIndexToCoordinateTop(top):
 
     return (top) * 16
 
-def print_src_with_style(leftNum, topNum):
+def findTile(leftNum, topNum):
+
+    leftNum = arrayIndexToCoordinateLeft(leftNum)
+    topNum = arrayIndexToCoordinateTop(topNum)
+
+
     # Values to check for topNum
     top_values_to_check = [topNum, topNum - 1, topNum - 5, topNum - 8]
 
-
+    
 
     for current_top in top_values_to_check:
         with open('AWBW-Map-Reader\saved\html_content.txt', 'r', encoding='utf-8') as file:
@@ -38,19 +43,10 @@ def print_src_with_style(leftNum, topNum):
                 matched_keyword = next((keyword for keyword in keywords if keyword in img_src), None)
 
                 if matched_keyword:
-                    print(matched_keyword)
+                    return matched_keyword
                 else:
                     print(f"No matching keyword found for style 'left:{leftNum}; top:{current_top}'.")
                 return  # Exit the function if the element is found
 
     print(f"Failed to find the element after checking all values.")
-
-# Example usage with a URL
-website_url = 'https://awbw.amarriner.com/prevmaps.php?maps_id=151870'
-
-left = arrayIndexToCoordinateLeft(26)
-top = arrayIndexToCoordinateTop(6)
-
-#get_html_content(website_url)
-print_src_with_style(left, top)
 
