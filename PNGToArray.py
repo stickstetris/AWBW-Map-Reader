@@ -27,7 +27,7 @@ def compare_tiles(tile, reference_tiles):
     best_match_name = ""
     best_match_score = float('-inf')  # Initialize with a low value for correlation
 
-    for tile_name, reference_tile in zip(['bridge', 'brokenpipe', 'brokenpipe2', 'empty', 'forest', 'mountain', 'ocean', 'ocean2', 'pipe', 'pipe2', 'plain', 'river', 'road', 'road2', 'shoal'], reference_tiles):
+    for tile_name, reference_tile in zip(['bridge', 'brokenpipe', 'brokenpipe2', 'empty', 'forest', 'mountain', 'ocean', 'ocean2', 'pipe', 'pipe2', 'plain', 'reef', 'river', 'road', 'road2', 'shoal'], reference_tiles):
         hist_comparison = cv2.compareHist(cv2.calcHist([tile], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256]),
                                           cv2.calcHist([reference_tile], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256]),
                                           cv2.HISTCMP_CORREL)
@@ -70,12 +70,13 @@ def getMapArray():
     pipe2 = cv2.imread('AWBW-Map-Reader/tiles/pipe2.png')
     plain = cv2.imread('AWBW-Map-Reader/tiles/plain.png')
     river = cv2.imread('AWBW-Map-Reader/tiles/river.png')
+    reef = cv2.imread('AWBW-Map-Reader/tiles/reef.png')
     road = cv2.imread('AWBW-Map-Reader/tiles/road.png')
     road2 = cv2.imread('AWBW-Map-Reader/tiles/road2.png')
     shoal = cv2.imread('AWBW-Map-Reader/tiles/shoal.png')
     shoal2 = cv2.imread('AWBW-Map-Reader/tiles/shoal.png')
 
-    reference_tiles = [bridge, brokenpipe, brokenpipe2, empty, forest, mountain, ocean, ocean2, pipe, pipe2, plain, river, road, road2, shoal, shoal2]
+    reference_tiles = [bridge, brokenpipe, brokenpipe2, empty, forest, mountain, ocean, ocean2, pipe, pipe2, plain, reef, river, road, road2, shoal, shoal2]
 
     # Set the tile size
     tile_size = 16

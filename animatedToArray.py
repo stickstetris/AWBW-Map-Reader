@@ -15,7 +15,7 @@ def findTile(leftNum, topNum):
 
 
     # Values to check for topNum
-    top_values_to_check = [topNum, topNum - 2, topNum - 6, topNum - 9, topNum - 15]
+    top_values_to_check = [topNum, topNum - 2, topNum - 6, topNum - 8, topNum - 9, topNum - 15]
 
     
 
@@ -38,7 +38,7 @@ def findTile(leftNum, topNum):
                 img_src = span_element.find('img')['src']
 
                 # Check for multiple keywords and print the matching one
-                keywords = ['city', 'comtower', 'base', 'airport', 'pipe', 'port', 'silo', 'hq', 'infantry']
+                keywords = ['city', 'comtower', 'base', 'airport', 'pipe', 'port', 'silo', 'hq', 'infantry', 'lab']
                 matched_keyword = next((keyword for keyword in keywords if keyword in img_src), None)
 
                 if matched_keyword:
