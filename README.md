@@ -7,7 +7,7 @@ Creates a 2D array in python of an AWBW map, given its map preview url.
 
 ```
 [['mountain' 'plain' 'forest' 'road2' 'road2']
- ['reef' 'shoal' 'pipe2' 'pipe' 'brokenpipe']
+ ['ocean3' 'shoal' 'pipe2' 'pipe' 'brokenpipe']
  ['silo' 'base' 'base' 'base' 'base']
  ['plain' 'plain' 'reef' 'plain' 'plain']
  ['hq' 'plain' 'plain' 'lab' 'hq']]
