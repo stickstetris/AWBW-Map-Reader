@@ -4,7 +4,7 @@ import animatedToArray
 import os
 
 pathToMap = 'AWBW-Map-Reader\saved\map.png'
-#getPNGAndHTML.getBoth('https://awbw.amarriner.com/prevmaps.php?maps_id=153739')
+getPNGAndHTML.getBoth('https://awbw.amarriner.com/prevmaps.php?maps_id=153739')
 
 ##If the files don't exist, download them through url
 if not os.path.exists(pathToMap):
