@@ -7,10 +7,10 @@ pathToMap = 'AWBW-Map-Reader/saved/map.png'
 
 ##If the files don't exist, download them through url
 if not os.path.exists(pathToMap):
-    url = input("Input the url to the map preview: ")
+    url = input("Input the url to the map preview: \n")
     downloadHTMLAndMapImage(url)
 else:
-    url = input("Input the url to the map preview, or leave blank to use the previous url: ")
+    url = input("Input the url to the map preview, or leave blank to use the previous url: \n")
     if url != "":
         downloadHTMLAndMapImage(url)
 
