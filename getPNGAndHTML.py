@@ -47,6 +47,6 @@ def download_html(url, save_path='AWBW-Map-Reader\saved\html_content.txt'):
         return None
     
 
-def getBoth(url):
+def downloadHTMLAndMapImage(url):
     download_html(url)
     downloadMapImage(url)

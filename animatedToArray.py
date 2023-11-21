@@ -9,7 +9,7 @@ def arrayIndexToCoordinateTop(top):
 
     return (top) * 16 + 1
 
-def findTile(leftNum, topNum):
+def getGIFName(leftNum, topNum):
     leftNum = arrayIndexToCoordinateLeft(leftNum)
     topNum = arrayIndexToCoordinateTop(topNum)
 
