@@ -10,12 +10,9 @@
 <link rel="stylesheet" type="text/css" href="css/slideshow.css?1700506787">
 <link rel="stylesheet" type="text/css" href="css/game.css?1700506787">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-      <link rel="stylesheet" href="css/calculator_new.css?1700506787">
-
-      <link rel="stylesheet" href="css/messages.css?1700506787">
-
-      <link rel="stylesheet" href="css/layout.css?1700506787">
-
+      <link rel="stylesheet" href="css/calculator_new.css?1700506787">
+      <link rel="stylesheet" href="css/messages.css?1700506787">
+      <link rel="stylesheet" href="css/layout.css?1700506787">
 <link rel="shortcut icon" href="https://awbw.amarriner.com/favicon.ico" type="image/x-icon">
 <link rel="icon" href="https://awbw.amarriner.com/favicon.ico" type="image/x-icon">
 <script type="text/javascript">
@@ -29,7 +26,7 @@
 </script>
 </head>
 <body>
-<!-- Begin Page (1700529149) (20:12:29) -->
+<!-- Begin Page (1700548607) (1:36:47) -->
 <div id="overDiv" style="position:absolute; visibility:hidden; z-index:900;"></div>
 <script type="text/javascript" language="JavaScript" src="js/overlib_mini_minify.js?v=1.0"></script>
 
@@ -253,7 +250,7 @@ Creator:&nbsp;<a href="profile.php?username=Sticks_">Sticks_</a>&nbsp;|| First P
 </div>
 <div id="gamemap-container">
 <div id="gamemap">
-<img id="map-background" src=maps/C153739.png?v=1700529149 style='position:absolute; z-index:99;' border=1><span style='left:1; top:33; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<img id="map-background" src=maps/C153739.png?v=1700548607 style='position:absolute; z-index:99;' border=1><span style='left:1; top:33; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
 <span style='left:17; top:24; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/orangestarbase.gif></span>
 <span style='left:33; top:24; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralbase.gif></span>
 <span style='left:49; top:24; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/bluemoonbase.gif></span>
@@ -292,489 +289,251 @@ None</span>
 </table>
 </div>
 </div>
-
-
-      <script type="text/javascript">
-
-         const gamemapContainer = document.getElementById("gamemap-container"),
-
-         gamemap = document.getElementById("gamemap"),
-
-         map = document.getElementById("map-background"),
-
-         zoomInButton = document.getElementById("zoom-in"),
-
-         zoomOutButton = document.getElementById("zoom-out"),
-
-         dimURL = window.location.href.match(/id=\d+/)[0],
-
-	      dimID = dimURL.match(/\d+/)[0];
-
-
-
-         var scale = localStorage.scale ? parseFloat(localStorage.scale) : 1;
-
-
-
-         
-
-         if(sessionStorage[dimID + "Width"]) {
-
-            applyCSS(gamemapContainer, {
-
-               height: (parseInt(sessionStorage[dimID + "Height"]) * scale) + "px",
-
-               width: (parseInt(sessionStorage[dimID + "Width"]) * scale) + "px"
-
-            });
-
-            applyCSS(gamemap, {
-
-               transform: "scale(" + scale + ")",
-
-               webkitTransform: "scale(" + scale + ")"
-
-            });
-
-         } else {
-
-            map.onload = function () {
-
-               applyCSS(gamemapContainer, {
-
-                  height: (map.height * scale) + "px",
-
-                  width: (map.width * scale) + "px"
-
-               })
-
-               sessionStorage.setItem(dimID + "Width", map.width);
-
-               sessionStorage.setItem(dimID + "Height", map.height);
-
-            }
-
-         }
-
-
-
-         function imgLoaded(imgElement) {
-
-            return imgElement.complete && imgElement.naturalHeight !== 0;
-
-         }
-
-
-
-         window.onload = function () {
-
-            applyCSS(gamemapContainer, {
-
-                  height: (map.height * scale) + "px",
-
-                  width: (map.width * scale) + "px"
-
-            }) 
-
-            var initialScale = scaleAdd(0);
-
-            
-
-            applyCSS(gamemapContainer, {
-
-                  visibility: 'visible'
-
-            })
-
-         };
-
-
-
-         var new_width, scaled_height;
-
-
-
-         function scaleAdd(n) {
-
-               
-
-            if (scale < 0.5 && n < 0) { return; } //do not allow to get too small
-
-            else if (scale > 2.9 && n > 0) { return; } //do not allow to get too big
-
-
-
-            else {
-
-               scale += n; //increase scale
-
-
-
-               new_width = parseInt(map.width) * scale;
-
-
-
-               //make scrollable if too big
-
-               if (new_width > 1190) {
-
-                     scaled_height = 1190 * (map.height / map.width);
-
-
-
-                     applyCSS(gamemapContainer, {
-
-                           height: scaled_height + "px",
-
-                           width: "1190px"
-
-                     });
-
-
-
-                     gamemapContainer.style.overflowY = 'visible';
-
-                     gamemapContainer.style.overflowX = 'scroll';
-
-
-
-                     gamemap.style.transform = "scale(" + scale + ")";
-
-                     gamemap.style.webkitTransform = "scale(" + scale + ")";
-
-
-
-               }
-
-
-
-               //otherwise scale
-
-               else {
-
-                     // console.log("Every other change now");
-
-                     applyCSS(gamemapContainer, {
-
-                           height: (map.height * scale) + "px",
-
-                           width: (map.width * scale) + "px",
-
-                           overflow: "visible"
-
-                     });
-
-                     gamemap.style.transform = "scale(" + scale + ")";
-
-                     gamemap.style.webkitTransform = "scale(" + scale + ")";
-
-
-
-               }
-
-
-
-               localStorage.setItem("scale", scale);
-
-            } 
-
-         }
-
-         zoomInButton.addEventListener("click", function() { scaleAdd(0.1) });
-
-         zoomOutButton.addEventListener("click", function() { scaleAdd(-0.1) });
-
-
-
-         function applyCSS(el, styles) {
-
-            for(prop in styles) {
-
-               el.style[prop] = styles[prop];
-
-            }
-
-         }
-
-
-
-        //function to toggle categorization field
-
-        function ToggleSection() {
-
-
-
-            var thisTable = document.getElementById("MC_cats");
-
-
-
-            //tables
-
-            if (thisTable.style.display === "none") {
-
-                thisTable.style.display = "block";
-
-            }
-
-
-
-            else {
-
-                thisTable.style.display = "none";
-
-            }
-
-        }
-
-
-
-      </script>
-
-
-
+
+      <script type="text/javascript">
+         const gamemapContainer = document.getElementById("gamemap-container"),
+         gamemap = document.getElementById("gamemap"),
+         map = document.getElementById("map-background"),
+         zoomInButton = document.getElementById("zoom-in"),
+         zoomOutButton = document.getElementById("zoom-out"),
+         dimURL = window.location.href.match(/id=\d+/)[0],
+	      dimID = dimURL.match(/\d+/)[0];
+
+         var scale = localStorage.scale ? parseFloat(localStorage.scale) : 1;
+
+         
+         if(sessionStorage[dimID + "Width"]) {
+            applyCSS(gamemapContainer, {
+               height: (parseInt(sessionStorage[dimID + "Height"]) * scale) + "px",
+               width: (parseInt(sessionStorage[dimID + "Width"]) * scale) + "px"
+            });
+            applyCSS(gamemap, {
+               transform: "scale(" + scale + ")",
+               webkitTransform: "scale(" + scale + ")"
+            });
+         } else {
+            map.onload = function () {
+               applyCSS(gamemapContainer, {
+                  height: (map.height * scale) + "px",
+                  width: (map.width * scale) + "px"
+               })
+               sessionStorage.setItem(dimID + "Width", map.width);
+               sessionStorage.setItem(dimID + "Height", map.height);
+            }
+         }
+
+         function imgLoaded(imgElement) {
+            return imgElement.complete && imgElement.naturalHeight !== 0;
+         }
+
+         window.onload = function () {
+            applyCSS(gamemapContainer, {
+                  height: (map.height * scale) + "px",
+                  width: (map.width * scale) + "px"
+            }) 
+            var initialScale = scaleAdd(0);
+            
+            applyCSS(gamemapContainer, {
+                  visibility: 'visible'
+            })
+         };
+
+         var new_width, scaled_height;
+
+         function scaleAdd(n) {
+               
+            if (scale < 0.5 && n < 0) { return; } //do not allow to get too small
+            else if (scale > 2.9 && n > 0) { return; } //do not allow to get too big
+
+            else {
+               scale += n; //increase scale
+
+               new_width = parseInt(map.width) * scale;
+
+               //make scrollable if too big
+               if (new_width > 1190) {
+                     scaled_height = 1190 * (map.height / map.width);
+
+                     applyCSS(gamemapContainer, {
+                           height: scaled_height + "px",
+                           width: "1190px"
+                     });
+
+                     gamemapContainer.style.overflowY = 'visible';
+                     gamemapContainer.style.overflowX = 'scroll';
+
+                     gamemap.style.transform = "scale(" + scale + ")";
+                     gamemap.style.webkitTransform = "scale(" + scale + ")";
+
+               }
+
+               //otherwise scale
+               else {
+                     // console.log("Every other change now");
+                     applyCSS(gamemapContainer, {
+                           height: (map.height * scale) + "px",
+                           width: (map.width * scale) + "px",
+                           overflow: "visible"
+                     });
+                     gamemap.style.transform = "scale(" + scale + ")";
+                     gamemap.style.webkitTransform = "scale(" + scale + ")";
+
+               }
+
+               localStorage.setItem("scale", scale);
+            } 
+         }
+         zoomInButton.addEventListener("click", function() { scaleAdd(0.1) });
+         zoomOutButton.addEventListener("click", function() { scaleAdd(-0.1) });
+
+         function applyCSS(el, styles) {
+            for(prop in styles) {
+               el.style[prop] = styles[prop];
+            }
+         }
+
+        //function to toggle categorization field
+        function ToggleSection() {
+
+            var thisTable = document.getElementById("MC_cats");
+
+            //tables
+            if (thisTable.style.display === "none") {
+                thisTable.style.display = "block";
+            }
+
+            else {
+                thisTable.style.display = "none";
+            }
+        }
+
+      </script>
+
 <span><br><br><br></span>
 <span class=small_text_11>
 Advance Wars is (c) 1990-2001 <a href="http://www.nintendo.com">Nintendo</a> and (c) 2001 <a href="http://www.intsys.co.jp/">Intelligent Systems</a>. All images are copyright their respective owners.<br><br>
-<!-- End Page (1700529149) (0) (20:12:29) -->
+<!-- End Page (1700548607) (0) (1:36:47) -->
 </span>
 </section>
 </div>
-
-
-      <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
-
-      <script src="js/axios.min.js"></script>
-
-      <!-- Script for the login box -->
-
-      <script>
-
-            var login = document.getElementById("login"),
-
-                  formElements = [].slice.call(document.getElementsByClassName("login-input")),
-
-                  loginForm = document.querySelector(".login-form"),
-
-                  errSpan = document.getElementById("login-err"),
-
-                  usernameInput = formElements[0],
-
-                  passwordInput = formElements[1];
-
-            var errMsg;
-
-
-
-            var loginBox = document.querySelector("#login-tab");
-
-            var forgotPassword = document.querySelector(".login-forgot-password");
-
-            var forgotPasswordTab = document.querySelector("#forgot-password-tab");
-
-            var forgotPasswordForm = document.querySelector(".forgot-password-form");
-
-
-
-            var forgotPasswordSubmit = document.querySelector(".forgot-password-submit");
-
-            var forgotPasswordRes = document.querySelector(".forgot-password-res");
-
-            
-
-            forgotPassword.onclick = function() {
-
-                  toggleDisplays([
-
-                        { el: loginBox, display: "none" }, 
-
-                        { el: forgotPasswordTab, display: "block"}
-
-                  ]);
-
-
-
-                  var forgotPasswordBack = document.querySelector(".forgot-password-back");
-
-                  forgotPasswordBack.onclick = function() {
-
-                        //Reset to initial state
-
-                        toggleDisplays([
-
-                              { el: loginBox, display: "block" },
-
-                              { el: forgotPasswordTab, display: "none" },
-
-                              { el: forgotPasswordForm, display: "flex" },
-
-                              { el: forgotPasswordRes, display: "none" }
-
-                        ]);
-
-                  }
-
-            }
-
-
-
-            forgotPasswordSubmit.onclick = function() {
-
-                  var forgotPasswordUsername = document.querySelector(".forgot-password-username");
-
-                  var forgotPasswordEmail = document.querySelector(".forgot-password-email");
-
-
-
-                  axios.post("api/forgot_password.php", { 
-
-                        username: forgotPasswordUsername.value,
-
-                        email: forgotPasswordEmail.value 
-
-                  })
-
-                  .then(function(res) {
-
-
-
-                        forgotPasswordRes.textContent = res.data.message;
-
-
-
-                        toggleDisplays([
-
-                              { el: forgotPasswordForm, display: "none" },
-
-                              { el: forgotPasswordRes, display: "block" }
-
-                        ]);
-
-                  })
-
-            }
-
-
-
-            //Used for the login box's tabs
-
-            function toggleDisplays(tabs) {
-
-                  tabs.forEach(function(tab) { tab.el.style.display = tab.display });
-
-            }
-
-            
-
-            login.onclick = function(e) {
-
-                  e.preventDefault();
-
-                  const uc = verifyEmpty(usernameInput),
-
-                        pc = verifyEmpty(passwordInput);
-
-                  if(uc && pc) {
-
-                        formElements.forEach(function(el) {
-
-                              el.style.background = "";
-
-                        })
-
-                        verifyLogin().done(function(match) {
-
-                              //1 means match, 0 means no match
-
-                              if(match == 0) { showErr(); }
-
-                              else if(match == 1) { loginForm.submit(); loadCurrPage(); }
-
-                        })
-
-                  }
-
-            }   
-
-            function verifyEmpty(el) {
-
-                  if(el.value.length === 0) {
-
-                        showErr()
-
-                        return false;
-
-                  }
-
-                  else return true;
-
-            } 
-
-            function verifyLogin() {
-
-                  const post = $.post("logincheck.php", {username: usernameInput.value, password: passwordInput.value});
-
-                  return post;
-
-            }
-
-            function showErr() {
-
-                  var errMsg = "Username or Password is incorrect";
-
-                  errSpan.textContent = errMsg;
-
-            }
-
-            function loadCurrPage() {
-
-                  window.location = 'prevmaps.php?maps_id=153739';
-
-                  return false;
-
-            }
-
-      </script>
-
-
-
-      <script>
-
-            const fixedHeader = document.getElementById("fixed-header-wrapper");
-
-            let smallHeader = false;
-
-            if(window.pageYOffset !== 0) {
-
-                  fixedHeader.classList.add("header-small")
-
-            }
-
-            document.body.onscroll = function() {
-
-                  if(window.pageYOffset !== 0 && smallHeader === false) {
-
-                        // console.log("?");
-
-                        smallHeader = true;
-
-                        fixedHeader.classList.add("header-small");
-
-                  } else if(window.pageYOffset === 0) {
-
-                        smallHeader = false;
-
-                        fixedHeader.classList.remove("header-small");
-
-                  }
-
-            }
-
-            
-
-
-
-      </script>
-
+
+      <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+      <script src="js/axios.min.js"></script>
+      <!-- Script for the login box -->
+      <script>
+            var login = document.getElementById("login"),
+                  formElements = [].slice.call(document.getElementsByClassName("login-input")),
+                  loginForm = document.querySelector(".login-form"),
+                  errSpan = document.getElementById("login-err"),
+                  usernameInput = formElements[0],
+                  passwordInput = formElements[1];
+            var errMsg;
+
+            var loginBox = document.querySelector("#login-tab");
+            var forgotPassword = document.querySelector(".login-forgot-password");
+            var forgotPasswordTab = document.querySelector("#forgot-password-tab");
+            var forgotPasswordForm = document.querySelector(".forgot-password-form");
+
+            var forgotPasswordSubmit = document.querySelector(".forgot-password-submit");
+            var forgotPasswordRes = document.querySelector(".forgot-password-res");
+            
+            forgotPassword.onclick = function() {
+                  toggleDisplays([
+                        { el: loginBox, display: "none" }, 
+                        { el: forgotPasswordTab, display: "block"}
+                  ]);
+
+                  var forgotPasswordBack = document.querySelector(".forgot-password-back");
+                  forgotPasswordBack.onclick = function() {
+                        //Reset to initial state
+                        toggleDisplays([
+                              { el: loginBox, display: "block" },
+                              { el: forgotPasswordTab, display: "none" },
+                              { el: forgotPasswordForm, display: "flex" },
+                              { el: forgotPasswordRes, display: "none" }
+                        ]);
+                  }
+            }
+
+            forgotPasswordSubmit.onclick = function() {
+                  var forgotPasswordUsername = document.querySelector(".forgot-password-username");
+                  var forgotPasswordEmail = document.querySelector(".forgot-password-email");
+
+                  axios.post("api/forgot_password.php", { 
+                        username: forgotPasswordUsername.value,
+                        email: forgotPasswordEmail.value 
+                  })
+                  .then(function(res) {
+
+                        forgotPasswordRes.textContent = res.data.message;
+
+                        toggleDisplays([
+                              { el: forgotPasswordForm, display: "none" },
+                              { el: forgotPasswordRes, display: "block" }
+                        ]);
+                  })
+            }
+
+            //Used for the login box's tabs
+            function toggleDisplays(tabs) {
+                  tabs.forEach(function(tab) { tab.el.style.display = tab.display });
+            }
+            
+            login.onclick = function(e) {
+                  e.preventDefault();
+                  const uc = verifyEmpty(usernameInput),
+                        pc = verifyEmpty(passwordInput);
+                  if(uc && pc) {
+                        formElements.forEach(function(el) {
+                              el.style.background = "";
+                        })
+                        verifyLogin().done(function(match) {
+                              //1 means match, 0 means no match
+                              if(match == 0) { showErr(); }
+                              else if(match == 1) { loginForm.submit(); loadCurrPage(); }
+                        })
+                  }
+            }   
+            function verifyEmpty(el) {
+                  if(el.value.length === 0) {
+                        showErr()
+                        return false;
+                  }
+                  else return true;
+            } 
+            function verifyLogin() {
+                  const post = $.post("logincheck.php", {username: usernameInput.value, password: passwordInput.value});
+                  return post;
+            }
+            function showErr() {
+                  var errMsg = "Username or Password is incorrect";
+                  errSpan.textContent = errMsg;
+            }
+            function loadCurrPage() {
+                  window.location = 'prevmaps.php?maps_id=153739';
+                  return false;
+            }
+      </script>
+
+      <script>
+            const fixedHeader = document.getElementById("fixed-header-wrapper");
+            let smallHeader = false;
+            if(window.pageYOffset !== 0) {
+                  fixedHeader.classList.add("header-small")
+            }
+            document.body.onscroll = function() {
+                  if(window.pageYOffset !== 0 && smallHeader === false) {
+                        // console.log("?");
+                        smallHeader = true;
+                        fixedHeader.classList.add("header-small");
+                  } else if(window.pageYOffset === 0) {
+                        smallHeader = false;
+                        fixedHeader.classList.remove("header-small");
+                  }
+            }
+            
+
+      </script>
 <script src="js/jquery-3.3.1.min.js"></script>
 </body>
 </html>

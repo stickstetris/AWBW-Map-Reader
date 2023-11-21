@@ -6,11 +6,14 @@ Creates a 2D array in python of an AWBW map, given its map preview url.
 
 
 ```
-[['mountain' 'plain' 'forest' 'road2' 'road2']
- ['ocean3' 'shoal' 'pipe2' 'pipe' 'brokenpipe']
- ['silo' 'base' 'base' 'base' 'base']
- ['plain' 'plain' 'reef' 'plain' 'plain']
- ['hq' 'plain' 'plain' 'lab' 'hq']]
+Input the url to the map preview, or leave blank to use the previous url: https://awbw.amarriner.com/prevmaps.php?maps_id=153739
+HTML content saved to AWBW-Map-Reader\saved\html_content.txt
+Image downloaded and saved to AWBW-Map-READER/saved/map.png
+mountain       plain            forest        road2           road2
+ocean3         shoal            pipe2         pipe            brokenpipe    
+silo           base_orangestar  base_neutral  base_bluemoon   base_neutral
+plain          plain            reef          plain           plain
+hq_orangestar  plain            plain         lab_orangestar  hq_bluemoon
 ```
 ### Prerequisites
 

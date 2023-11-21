@@ -43,7 +43,7 @@ def map_tiles_to_array(tiles, rows, cols, reference_tiles):
     Map tiles to a 2D array based on comparison with reference tiles.
     Return an array of tile names.
     """
-    tile_map = np.empty((rows, cols), dtype=np.dtype('U10'))
+    tile_map = np.empty((rows, cols), dtype=f'U{50}')
 
     for i in range(rows):
         for j in range(cols):

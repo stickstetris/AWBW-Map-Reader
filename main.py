@@ -3,7 +3,7 @@ from getPNGAndHTML import downloadHTMLAndMapImage
 from animatedToArray import getGIFName
 import os
 
-pathToMap = 'AWBW-Map-Reader\saved\map.png'
+pathToMap = 'AWBW-Map-Reader/saved/map.png'
 
 ##If the files don't exist, download them through url
 if not os.path.exists(pathToMap):
@@ -26,4 +26,13 @@ for i in range(len(mapArray)):
                 mapArray[i][j] = tile
 
 
-print(mapArray)
+def printArray(array):
+    max_lengths = [max(map(len, col)) for col in zip(*array)]
+
+    # Print the 2D array with proper alignment
+    for row in array:
+        for element, length in zip(row, max_lengths):
+            print(element.ljust(length + 2), end='')  # Add 2 for extra spacing between columns
+        print()
+
+printArray(mapArray)
