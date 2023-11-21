@@ -4,15 +4,15 @@
 </title>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.75">
-<link rel="stylesheet" href="css/awbw_minify.css?1700428851" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/header.css?1700428851">
-<link rel="stylesheet" type="text/css" href="css/main.css?1700428851">
-<link rel="stylesheet" type="text/css" href="css/slideshow.css?1700428851">
-<link rel="stylesheet" type="text/css" href="css/game.css?1700428851">
+<link rel="stylesheet" href="css/awbw_minify.css?1700506787" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/header.css?1700506787">
+<link rel="stylesheet" type="text/css" href="css/main.css?1700506787">
+<link rel="stylesheet" type="text/css" href="css/slideshow.css?1700506787">
+<link rel="stylesheet" type="text/css" href="css/game.css?1700506787">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-      <link rel="stylesheet" href="css/calculator_new.css?1700428851">
-      <link rel="stylesheet" href="css/messages.css?1700428851">
-      <link rel="stylesheet" href="css/layout.css?1700428851">
+      <link rel="stylesheet" href="css/calculator_new.css?1700506787">
+      <link rel="stylesheet" href="css/messages.css?1700506787">
+      <link rel="stylesheet" href="css/layout.css?1700506787">
 <link rel="shortcut icon" href="https://awbw.amarriner.com/favicon.ico" type="image/x-icon">
 <link rel="icon" href="https://awbw.amarriner.com/favicon.ico" type="image/x-icon">
 <script type="text/javascript">
@@ -26,7 +26,7 @@
 </script>
 </head>
 <body>
-<!-- Begin Page (1700453511) (23:11:51) -->
+<!-- Begin Page (1700529149) (20:12:29) -->
 <div id="overDiv" style="position:absolute; visibility:hidden; z-index:900;"></div>
 <script type="text/javascript" language="JavaScript" src="js/overlib_mini_minify.js?v=1.0"></script>
 
@@ -250,7 +250,7 @@ Creator:&nbsp;<a href="profile.php?username=Sticks_">Sticks_</a>&nbsp;|| First P
 </div>
 <div id="gamemap-container">
 <div id="gamemap">
-<img id="map-background" src=maps/C153739.png?v=1700453511 style='position:absolute; z-index:99;' border=1><span style='left:1; top:33; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
+<img id="map-background" src=maps/C153739.png?v=1700529149 style='position:absolute; z-index:99;' border=1><span style='left:1; top:33; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/missilesiloempty.gif></span>
 <span style='left:17; top:24; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/orangestarbase.gif></span>
 <span style='left:33; top:24; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/neutralbase.gif></span>
 <span style='left:49; top:24; position:absolute; border: 0px; z-index:100;'><img src=terrain/aw1/bluemoonbase.gif></span>
@@ -412,7 +412,7 @@ None</span>
 <span><br><br><br></span>
 <span class=small_text_11>
 Advance Wars is (c) 1990-2001 <a href="http://www.nintendo.com">Nintendo</a> and (c) 2001 <a href="http://www.intsys.co.jp/">Intelligent Systems</a>. All images are copyright their respective owners.<br><br>
-<!-- End Page (1700453511) (0) (23:11:51) -->
+<!-- End Page (1700529149) (0) (20:12:29) -->
 </span>
 </section>
 </div>
